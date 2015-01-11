@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="src/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+	    <div class="gallery">
+			<h2>Simple gallery of green images</h2>
+			<div class="counter"><big>&#9679</big></div>
+			<img class="photo" src="img/01.png"/>
+		</div>
+        <div class="gallery">
+			<h2>Simple gallery of blue images</h2>
+			<div class="counter"><big>&#9679</big></div>
+			<img class="photo" src="img/11.png"/>
+		</div>
+	</div>
+    <script src="src/gallery.js"></script>
+	<script>
+		gallery.init({
+			classNameOfPhoto: "photo",
+			listsOfAllPhoto: [
+				[ "img/01.png",
+				  "img/02.png",
+				  "img/03.png",
+				  "img/04.png" ],
+				[ "img/11.png",
+				  "img/12.png",
+				  "img/13.png",
+				  "img/14.png" ],
+			],
+			classNameOfPhotoCounter: "counter"
+		});
+	</script>
+</body>
+</html>
