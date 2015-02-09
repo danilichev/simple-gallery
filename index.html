@@ -19,7 +19,7 @@
 	</div>
     <script src="src/gallery.js"></script>
 	<script>
-		gallery.init({
+		var initGallery = gallery.init({
 			classNameOfPhoto: "photo",
 			listsOfAllPhoto: [
 				[ "img/01.png",
@@ -33,6 +33,14 @@
 			],
 			classNameOfPhotoCounter: "counter"
 		});
+
+        if (typeof window.addEventListener != 'undefined') {
+            window.addEventListener('load', initGallery, false);
+        } else if (typeof document.addEventListener != 'undefined') {
+        	document.addEventListener('load', initGallery, false);
+        } else if (typeof window.attachEvent != 'undefined') {
+        	window.attachEvent('onload', initGallery);
+        }
 	</script>
 </body>
 </html>

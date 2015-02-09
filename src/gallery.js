@@ -1,8 +1,8 @@
 var gallery = (function() {
 
 	var classNameOfPhoto,
-		listsOfAllPhoto,
-		classNameOfPhotoCounter;
+		  listsOfAllPhoto,
+		  classNameOfPhotoCounter;
 
 	function setAllPageturner() {
 
